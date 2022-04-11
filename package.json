@@ -1,15 +1,20 @@
 {
+  "homepage": "http://theScarlettCoder.github.io/react-native-auth",
   "name": "mobile-todo",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    
     "start": "expo start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "~1.15.0",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.1",
     "expo": "~44.0.0",
@@ -22,11 +27,11 @@
     "react-native-reanimated": "~2.3.1",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1",
-    "@react-native-async-storage/async-storage": "~1.15.0"
+    "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "gh-pages": "^3.2.3"
   },
   "private": true
 }
